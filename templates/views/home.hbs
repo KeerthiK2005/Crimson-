@@ -374,21 +374,21 @@ const createChatLi = (message, className) => {
 }
 
 const generateResponse = (chatElement) => {
-    const API_URL = "https://api.openai.com/v1/chat/completions";
+    const API_URL = "https://api.google.com/gemini/v1/chat/completions";
     const messageElement = chatElement.querySelector("p");
 
     // Define the properties and message for the API request
     const requestOptions = {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${API_KEY}`
-        },
-        body: JSON.stringify({
-            model: "gpt-3.5-turbo",
-            messages: [{role: "user", content: userMessage}],
-        })
-    }
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+    "Authorization": "Bearer AIzaSyCnV23dpL9d4juTywKJck07yi5aWRs2BmI" // Replace with your actual API key
+  },
+  body: JSON.stringify({
+    model: "gemini-1.0-pro", // Specify the Gemini Pro model
+    messages: [{role: "user", content: userMessage}],
+  })
+}
 
     // Send POST request to API, get response and set the reponse as paragraph text
     fetch(API_URL, requestOptions).then(res => res.json()).then(data => {
@@ -441,4 +441,3 @@ chatbotToggler.addEventListener("click", () => document.body.classList.toggle("s
     </script>
 </body>
 </html>
-
