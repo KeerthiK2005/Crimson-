@@ -1,7 +1,9 @@
 **Idea**
+
 Our inspiration for Crimson stems from the profound need to address and alleviate critical gynecological issues affecting women on a global scale. We aim to create a platform that not only provides information but serves as a beacon of support for women navigating complex health challenges.
 
 **About the Website**
+
 Crimson is not just a website; it's a comprehensive resource hub for women facing various gynecological issues. Users can explore a wealth of information, ranging from articles penned by experts to personalized advice tailored to specific health concerns. The website endeavors to build a vibrant and supportive community where women can share experiences, seek guidance, and find solace.
 
 **Tech Stack**
